@@ -16,15 +16,16 @@ class SocialLoginButton extends StatelessWidget {
         height: 50,
         decoration: BoxDecoration(
             border: Border.all(), borderRadius: BorderRadius.circular(50)),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Row(
           children: [
-            const SizedBox(width: 30),
             Image.asset(imagePath, width: 18),
-            const SizedBox(width: 50),
-            Center(
-              child: Text(
-                buttonText,
-                style: const TextStyle(fontSize: 14),
+            Expanded(
+              child: Align(
+                child: Text(
+                  buttonText,
+                  style: const TextStyle(fontSize: 14),
+                ),
               ),
             )
           ],
